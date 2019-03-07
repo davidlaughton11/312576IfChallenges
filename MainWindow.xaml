@@ -45,6 +45,21 @@
             <TextBox x:Name="char1" />
             <Button x:Name="btnChar1" Content="Press to see if character is in the alphabet" Click="btnChar1_Click" />
             <Label x:Name="lblOutput6" />
+
+            <TextBlock Text="Is the letter a vowel or consonant" />
+            <TextBox x:Name="txtInput" MaxLength="1"/>
+            <Button x:Name="btnCheck" Content="Press to see if letter is vowel or not" Click="btnCheck_Click"/>
+            <Label x:Name="lblOutput7" />
+
+            <TextBlock Text="Is the character a letter a number or a specail character?" />
+            <TextBox x:Name="txtInput1" MaxLength="1" />
+            <Button x:Name="btnCheck1" Content="Press to see what character is" Click="btnCheck1_Click" />
+            <Label x:Name="lblOutput8" />
+
+            <TextBlock Text="Is this an uppercase letter or a lower case" />
+            <TextBox x:Name="txtInput2" MaxLength="1" />
+            <Button x:Name="btnCheck2" Content="Press" Click="btnCheck2_Click" />
+            <Label x:Name="lblOutput9" />
         </StackPanel>
     </ScrollViewer>
 </Window>

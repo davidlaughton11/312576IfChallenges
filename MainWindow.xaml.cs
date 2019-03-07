@@ -136,10 +136,93 @@ namespace _312576IfChallenges
                 lblOutput5.Content = "It is not a leap year";
             }
         }
-        //Find how to do this with alphabet or not 
+        
         private void btnChar1_Click(object sender, RoutedEventArgs e)
         {
+            char tempChar;
+            char.TryParse(char1.Text, out tempChar);
+            if (Char.IsLetter(tempChar) == true)
+            {
+                lblOutput6.Content = "It is a letter";
+            }
+            else
+            {
+                lblOutput6.Content = "It is not a letter";
+            }
+        }
 
+
+        private void btnCheck_Click(object sender, RoutedEventArgs e)
+        {
+            txtInput.Text = txtInput.Text.ToLower();
+            char theLetter = txtInput.Text[0];
+
+            bool isVowel = false;
+            if (theLetter == 'a')
+            {
+                isVowel = true;
+            }
+            else if (theLetter == 'e')
+            {
+                isVowel = true;
+            }
+            else if (theLetter == 'i')
+            {
+                isVowel = true;
+            }
+            else if (theLetter == 'o')
+            {
+                isVowel = true;
+            }
+            else if (theLetter == 'u')
+            {
+                isVowel = true;
+            }
+
+            if (isVowel)
+            {
+                lblOutput7.Content = "It is a vowel";
+            }
+            else
+            {
+                lblOutput7.Content = "It is a consonant";
+            }
+        }
+
+        private void btnCheck1_Click(object sender, RoutedEventArgs e)
+        {
+            char theChar = txtInput1.Text[0];
+            char.TryParse(txtInput1.Text, out theChar);
+            if (Char.IsLetter(theChar) == true) 
+            {
+                lblOutput8.Content = "This is a letter";
+            }
+            else if (char.IsDigit(theChar) == true)
+            {
+                lblOutput8.Content = "This is a number";
+            }
+            else
+            {
+                lblOutput8.Content = "This is a special character";
+            }
+        }
+
+        private void btnCheck2_Click(object sender, RoutedEventArgs e)
+        {
+            char theChar1 = txtInput2.Text[0];
+            char.TryParse(txtInput2.Text, out theChar1);
+            if (Char.IsLower(theChar1) == true)
+            {
+                lblOutput9.Content = "This is lowercase";
+            }
+            else if (Char.IsUpper(theChar1) == true)
+            {
+                lblOutput9.Content = "This is uppercase";
+            }
+            else
+            {
+                lblOutput9.Content = "This is not a letter";
+            }
         }
     }
 }
